@@ -35,7 +35,7 @@ em {
 
 body {
     scrollbar-width: none;
-    background-image: url(./images/mesh-385.png);
+    background-image: url(../images/mesh-385.png);
     background-repeat: no-repeat;
     background-size: 100vw 400vh;
     transition: all 0.4s ease-in-out;
@@ -435,34 +435,34 @@ header {
 }
 
 .gridPortfolio1 {
-    background-image: url(./images/JogoMemoria.png);
+    background-image: url(../images/JogoMemoria.png);
     background-size: 20vw 30vh;
 }
 
 .gridPortfolio2 {
-    background-image: url(./images/JogoDetonaRalph.png);
+    background-image: url(../images/JogoDetonaRalph.png);
     background-size: 20vw 30vh;
 }
 
 .gridPortfolio3 {
-    background-image: url(./images/Calculadora.png);
+    background-image: url(../images/Calculadora.png);
     background-size: 20vw 30vh;
 }
 
 .gridPortfolio4 {
-    background-image: url(./images/Portifolio.png);
+    background-image: url(../images/Portifolio.png);
     background-size: 20vw 30vh;
 }
 
 .gridPortfolio5 {
-    background-image: url(./images/DESENVOLVIMENTO.gif);
+    background-image: url(../images/DESENVOLVIMENTO.gif);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 100%;
 }
 
 .gridPortfolio6 {
-    background-image: url(./images/DESENVOLVIMENTO.gif);
+    background-image: url(../images/DESENVOLVIMENTO.gif);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 100%;
@@ -761,7 +761,7 @@ footer h1 {
 
 .bodyTemaClaroAtivo {
     transition: background 0.4s ease-in-out;
-    background-image: url(./images/mesh-80.png);
+    background-image: url(../images/mesh-80.png);
 }
 
 .navLiAHoverTemaClaro a:hover {
