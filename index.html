@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiago Castor</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- ================= SOBRE MIM ================= -->
+     <link rel="stylesheet" href="./styles/responsividade.css">
+</head>
+
+<body class="body">
+    <!-- ================= HEADER ================= -->
+    <header>
+        <div class="navBar">
+            <ul class="navItens">
+                <li class="navLi"><a href="#sobremim">SOBRE MIM</a></li>
+                <li class="navLi"><a href="#formacao">FORMAÇÃO</a></li>
+                <li class="navLi"><a href="#portfolio">PORTFÓLIO</a></li>
+                <li class="navLi"><a href="#contato">CONTATO</a></li>
+
+                <label class="switch">
+                    <input type="checkbox" id="checkboxTema">
+                    <span class="slider"></span>
+                </label>
+
+            </ul>
+        </div>
+    </header>
+    <div id="toast-container"></div>
+    <main>
+
+        <!-- ================= SOBRE MIM ================= -->
+        <span id="sobremim"></span>
+        <div class="div1sobremim">
+            <div class="myFace">
+                    <img class="imgFace reveal from-left" src="./images/myFace2.png" alt="Meu Rosto">
+            </div>
+            <div class="sobreMim reveal from-right">
+                <h1>SOBRE MIM</h1>
+                <p>
+                    Olá! Meu nome é <span class="name">Thiago Ricardo de Almeida Castor</span>, tenho 19 anos e sou
+                    estudante de Engenharia de Software. Sou apaixonado por tecnologia e estou sempre em busca de novos
+                    conhecimentos nas áreas de programação, desenvolvimento de sistemas e desenvolvimento web.
+                    <br><br>
+                    Nas horas vagas, gosto de jogar videogame e desenvolver projetos próprios, que me permitem aprimorar
+                    minhas habilidades técnicas e estimular minha criatividade. Sou uma pessoa dedicada, responsável,
+                    proativa e motivada por novos desafios, buscando evoluir constantemente tanto no âmbito pessoal
+                    quanto profissional.
+                    <br><br>
+                    Meu objetivo é construir uma carreira sólida na área de tecnologia, adquirindo experiência,
+                    contribuindo para projetos inovadores e entregando soluções que gerem valor para empresas e
+                    usuários.
+                    <br><br>
+                    Atualmente, estou em busca da minha primeira oportunidade na área de desenvolvimento, onde possa
+                    aplicar meus conhecimentos, aprender com profissionais experientes e crescer como desenvolvedor.
+                </p>
+                <button class="buttonSobreMim" onclick="curriculoDownload()">Currículo <span
+                        style="text-decoration: underline;">&#8595;</span></button>
+            </div>
+        </div>
+
+        <!-- ================= FORMAÇÃO ================= -->
+        <span id="formacao"></span>
+        <div class="div2formacao">
+            <div class="formacao">
+                <div>
+                    <h1 class="textFormacao">FORMAÇÃO</h1>
+                </div>
+                <div class="cards">
+                    <div class="card reveal from-left">
+                        <h1 class="cardH1">Faculdade - UNINTER</h1>
+                        <p>Atualmente estou cursando Engenharia de Software na UNINTER, com início em julho de 2025 e
+                            previsão de conclusão em julho de 2029. Durante a graduação, venho desenvolvendo
+                            conhecimentos em programação, banco de dados, desenvolvimento web.</p>
+                    </div>
+                    <div class="card reveal from-bottom">
+                        <h1 class="cardH1">Ensino Médio – E.E. Vila São Joaquim II</h1>
+                        <p>
+                            Concluído em dezembro de 2025. Durante essa etapa desenvolvi conhecimentos e habilidades que
+                            contribuíram para meu crescimento acadêmico e pessoal.</p>
+                    </div>
+                    <div class="card reveal from-right">
+                        <h1 class="cardH1">Cursos - DIO.ME</h1>
+                        <ul>
+                            <li>Contribuindo em um Projeto Open Source no GitHub</li>
+                            <li>Criando e Manipulando Vetores e Matrizes</li>
+                            <li>Entendendo Algoritmos e Fluxogramas</li>
+                            <li>Criando um Jogo do Detona Ralph com JavaScript</li>
+                            <li>Desafios de Projetos- Crie Um Portfólio Vencedor </li>
+                            <li>Entendendo Comunicação Client x Server</li>
+                            <li>Versionamento de Código com Git e GitHub</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="idiomas">
+                    <h1>idiomas:</h1>
+                    <div>
+                        <p>Inglês - Básico</p>
+                        <p>Português - Nativo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= PORTFOLIO ================= -->
+        <span id="portfolio"></span>
+        <div class="div3portfolio">
+            <div class="gridport">
+                <a class="reveal from-left" target="_blank" rel="noopener noreferrer" href="https://thiagocastor.github.io/Jogo-da-mem-ria/">
+                    <div class="gridportcard gridPortfolio1">
+                        <div class="mouse-glow"></div>
+                        <div class="gridPortCardText">
+                            <h1>Jogo da Memória</h1>
+                            <p>
+                                Jogo desenvolvido durante meu processo de aprendizado em programação, como parte dos desafios práticos propostos pela <b>DIO.me</b>.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a class="reveal from-top" target="_blank" rel="noopener noreferrer" href="https://thiagocastor.github.io/Detona-Ralph-Game/">
+                    <div class="gridportcard gridPortfolio2">
+                        <div class="mouse-glow"></div>
+                        <div class="gridPortCardText">
+                            <h1>Jogo Detona Ralph</h1>
+                            <p>
+                                Jogo desenvolvido durante meu processo de aprendizado em programação, como parte dos desafios práticos propostos pela <b>DIO.me</b>.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a class="reveal from-right" target="_blank" rel="noopener noreferrer"
+                    href="https://thiagocastor.github.io/Calculadora-TC/index.html">
+                    <div class="gridportcard gridPortfolio3">
+                        <div class="mouse-glow"></div>
+                        <div class="gridPortCardText">
+                            <h1>Calculadora | TC</h1>
+                            <p>
+                                A Calculadora | TC foi desenvolvida para auxiliar nos cálculos de tributos durante minha atuação na empresa em que trabalhei.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <h2 class="textPort inteiro reveal from-left">PORTFOLIO</h2>
+                <a class="reveal from-left" target="_blank" rel="noopener noreferrer" href="./index.html">
+                    <div class="gridportcard gridPortfolio4">
+                        <div class="mouse-glow"></div>
+                        <div class="gridPortCardText">
+                            <h1>Portfólio</h1>
+                            <p>
+                                Meu portfólio digital, desenvolvido para apresentar meus projetos, demonstrar minhas habilidades e apoiar minha trajetória acadêmica e profissional na área de tecnologia.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a class="reveal from-bottom" target="_blank" rel="noopener noreferrer">
+                    <div class="gridportcard gridPortfolio5">
+                        <div class="mouse-glow"></div>
+                        <div class="gridPortCardText">
+                            <h1>Em desenvolvimento...</h1>
+                            <p>
+                                ...
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a class="reveal from-right" target="_blank" rel="noopener noreferrer">
+                    <div class="gridportcard gridPortfolio6">
+                        <div class="mouse-glow"></div>
+                        <div class="gridPortCardText">
+                            <h1>Em desenvolvimento...</h1>
+                            <p>
+                                ...
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- ================= CONTATO ================= -->
+    <span id="contato"></span>
+    <footer class="footer">
+        <div>
+            <h1>Entre em contato</h1>
+        </div>
+        <div class="metodContact">
+            <div class="contactOtters reveal from-bottom">
+                <p class="reveal from-left">Tem alguma dúvida, proposta de trabalho ou deseja entrar em contato?
+                    <em>Envie uma mensagem pelo formulário abaixo. Ficarei feliz em conversar sobre oportunidades,
+                        projetos e novas ideias.</em>
+                </p>
+                <br>
+                <p class="reveal from-left">Vamos conversar? Se você tem um projeto, uma ideia ou apenas quer trocar uma
+                    ideia, <em>envie sua mensagem.</em> Responderei assim que possível.</p>
+                <div class="icones">
+                    <a target="_blank" href="https://wa.me/5511963194993
+                    "><img id="wpp" src="./images/icons8-whatsapp-24.png" alt="WhatsApp"></a>
+                    <a target="_blank" href="https://www.instagram.com/thicas__/
+                    "><img id="inst" src="./images/icons8-instagram-24.png" alt="Instagram"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/thiago-castor-750a54239/
+                    "><img id="link" src="./images/icons8-linkedin-24.png" alt="Linkedin"></a>
+                    <a target="_blank" href="https://discord.com/users/471803693340295172
+                    "><img id="disc" src="./images/icons8-logo-discord-48.png" alt="Discord"></a>
+                    <a target="_blank" href="https://github.com/THIAGOCASTOR
+                    "><img id="gith" src="./images/icons8-github-24.png" alt="GitHub"></a>
+                </div>
+            </div>
+            <div class="contactEmail reveal from-top">
+                <form action="formContato">
+                    <input class="email" type="text" placeholder="Digite seu E-mail">
+                    <br>
+                    <input class="CTitle" type="text" placeholder="Nome completo">
+                    <br>
+                    <textarea class="mensage" type="text" placeholder="Digite sua mensagem aqui"></textarea>
+                    <br>
+                    <button id="btnErro" class="btn cssbuttons-io" type="button"
+                        onclick="confirmDados()">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1036 @@
+@media (max-width: 768px) {
+    header {
+        height: 7vw;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.516);
+        position: fixed;
+        z-index: 999;
+    }
+
+
+
+    .navLi {
+        list-style-type: none;
+        font-size: 3vw;
+        transition: all 0.4s ease;
+    }
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 6.042vw;
+        height: 3.334vw;
+    }
+
+    .slider::before {
+        content: "";
+        position: absolute;
+        width: 2.708vw;
+        height: 2.708vw;
+        left: 0.312vw;
+        top: 0.312vw;
+        background: #fff;
+        border-radius: 50%;
+        transition: .35s cubic-bezier(.4, 0, .2, 1);
+        box-shadow:
+            0 0.208vw 0.626vw rgba(0, 0, 0, .25),
+            0 0.104vw 0.208vw rgba(0, 0, 0, .15);
+    }
+
+    .switch input:checked+.slider::before {
+        transform: translateX(2.708vw);
+    }
+
+    .switch input:active+.slider::before {
+        width: 3.126vw;
+    }
+
+    .switch input:checked:active+.slider::before {
+        transform: translateX(2.292vw);
+    }
+
+
+
+
+
+    .div1sobremim {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .imgFace {
+        height: 45vw;
+        width: 65vw;
+        border-radius: 2vw;
+        box-shadow: -0.521vw -0.521vw 5.208vw 0.001vw rgb(140, 0, 255), 0.521vw 0.521vw 2.604vw 0.001vw #00bfff7b;
+        object-fit: cover;
+        margin-bottom: 2vw;
+    }
+
+    .sobreMim {
+        width: 90%;
+        font-size: 1.2vw;
+        text-align: justify;
+        color: white;
+        border-bottom: 0.104vw solid #37cdff75;
+    }
+
+    .sobreMim h1 {
+        background-color: #37cdff75;
+        padding: 0.2vw 0.2vw 0.2vw 0.5vw;
+        margin-bottom: 0.5vw;
+        color: white;
+        width: 100%;
+        font-size: 5vw;
+    }
+
+    .name {
+        font-size: 4vw;
+    }
+
+    .sobreMim p {
+        padding: 0.5vw;
+        font-size: 2.5vw;
+        width: 100%;
+    }
+
+    .buttonSobreMim {
+        color: white;
+        height: 8vw;
+        width: 20vw;
+        background-color: transparent;
+        border: 0.104vw solid #37cdff;
+        font-size: 4vw;
+        transition: all 0.2s ease-in-out;
+        margin: 5vh 0.5vw 3vh 0.5vw;
+        animation: pulsar 2s ease-in-out infinite;
+    }
+
+    .from-top {
+        transform: translateY(-100px);
+    }
+
+    .from-bottom {
+        transform: translateY(100px);
+    }
+
+    .from-left {
+        transform: translateX(-100px);
+    }
+
+    .from-right {
+        transform: translateX(30px);
+    }
+
+    .div2formacao {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .formacao {
+        font-size: 4.5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .textFormacao {
+        letter-spacing: 1vw;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        gap: 2vh;
+        flex-direction: column;
+    }
+
+    .card {
+        height: 25vw;
+        width: 75vw;
+        border-top: 0.104vw solid lightgray;
+        border-bottom: 0.104vw solid #37cdff;
+        border-right: 0.104vw solid lightgray;
+        border-left: 0.104vw solid #37cdff;
+        border-radius: 2vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card p {
+        text-align: justify;
+        color: white;
+        width: 60vw;
+        font-size: 2.5vw;
+    }
+
+    .card li {
+        color: white;
+        width: 80vw;
+        font-size: 2vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        border-top: 0.104vw solid #37cdff;
+        border-bottom: 0.104vw solid #37cdff;
+        border-right: 0.104vw solid #37cdff;
+        border-left: 0.104vw solid #37cdff;
+        box-shadow: 0vw 0vw 0.26vw 0.052vw white;
+    }
+
+    .cardH1 {
+        font-size: 5vw;
+        color: #37cdff;
+        display: flex;
+        justify-content: center;
+        margin: 0vw;
+    }
+
+    .idiomas {
+        color: white;
+        display: flex;
+        height: 5vh;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+        width: 90%;
+    }
+
+    .idiomas p {
+        font-size: 3vw;
+    }
+
+    .idiomas h1 {
+        font-size: 9vw;
+        margin: 10vw;
+    }
+
+    .idiomas div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 0.052vw solid black;
+        width: 10vw;
+        height: 1.5vw;
+    }
+
+    .idiomas div p {
+        background-color: rgba(255, 255, 255, 0.521);
+        padding: 0vw 0.5vw 0vw 0.5vw;
+        border: 2px solid black;
+        color: rgb(255, 255, 255);
+        text-shadow: 0px 0px 1px black;
+        width: max-content;
+        height: max-content;
+    }
+
+    .div3portfolio {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gridport {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1vw;
+    }
+
+    .inteiro {
+        grid-column: 1 / -1;
+    }
+
+    .gridportcard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+        height: 40vw;
+        border: 0.078vw solid rgb(0, 0, 0);
+        background-color: #0000005a;
+        font-size: 2.5vw;
+        color: white;
+        transition: all 0.2s ease-in-out;
+        overflow: hidden;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+    }
+
+
+
+    .textPort {
+        font-size: 15vw;
+        letter-spacing: -0.35vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-shadow: 0vw 0vw 5.208vw rgb(162, 0, 255);
+        margin: 0.5vw 2vw 0.5vw 2vw;
+        z-index: 998;
+    }
+
+
+
+    .gridPortfolio1 {
+        background-image: url(/images/JogoMemoria.png);
+        background-size: 30vw 40vw;
+    }
+
+    .gridPortfolio2 {
+        background-image: url(/images/JogoDetonaRalph.png);
+        background-size: 30vw 40vw;
+    }
+
+    .gridPortfolio3 {
+        background-image: url(/images/Calculadora.png);
+        background-size: 30vw 40vw;
+    }
+
+    .gridPortfolio4 {
+        background-image: url(/images/Portifolio.png);
+        background-size: 30vw 40vw;
+    }
+
+
+
+
+
+    .gridPortCardText {
+        background-color: #0f0f0ff1;
+        width: 30vw;
+        height: 20vw;
+        margin-top: 20vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: justify;
+    }
+
+    .gridport h1 {
+        font-size: 3.5vw;
+    }
+
+    .gridport p {
+        font-size: 2.3vw;
+        text-align: center;
+    }
+
+    footer {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+    }
+
+    .metodContact {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contactOtters {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5vw;
+        flex-direction: column;
+    }
+
+    .contactOtters p {
+        width: 90vw;
+        text-align: justify;
+        font-size: 4vw;
+        margin-bottom: 4vw;
+    }
+
+    .contactEmail {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    footer input {
+        background-color: transparent;
+        border: 0.052vw solid rgb(255, 255, 255);
+        width: 85vw;
+        height: 8vw;
+        margin: 0.5vw;
+        padding: 1vw;
+        color: white;
+        font-size: 4vw;
+        border-radius: 2.5vw;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .mensage {
+        background-color: transparent;
+        border: 0.052vw solid rgb(255, 255, 255);
+        width: 85vw;
+        height: 24vw;
+        margin: 0.5vw;
+        padding: 1vw;
+        color: white;
+        font-size: 4vw;
+        border-radius: 2.5vw;
+        transition: all 0.2s ease-in-out;
+    }
+
+
+
+
+
+
+
+
+
+    footer h1 {
+        font-size: 10.5vw;
+        margin: 3vw;
+    }
+
+
+
+    #wpp,
+    #inst,
+    #link,
+    #disc,
+    #gith {
+        width: 5vw;
+        margin: 3vw 1vw 7vw 1vw;
+        transition: all 0.2s ease-in-out;
+    }
+
+
+
+    .cssbuttons-io {
+        position: relative;
+        font-family: inherit;
+        font-weight: 500;
+        letter-spacing: 0.2vw;
+        cursor: pointer;
+        border: none;
+        background: linear-gradient(to right, #6a00ff, #1100ff);
+        color: ghostwhite;
+        overflow: hidden;
+        width: 24vw;
+        height: 8vw;
+        margin: 0.5vw;
+        padding: 0.5vw;
+        font-size: 5vw;
+        border-radius: 1.25vw;
+        transition: all 0.2s ease-in-out;
+    }
+
+    /*==========================================================
+        TEMA CLARO (ESTÁ POR ULTIMO POR SER CASCATA!)
+    ==========================================================*/
+
+    .bodyTemaClaroAtivo {
+        transition: background 0.4s ease-in-out;
+        background-image: url(/images/mesh-80.png);
+    }
+
+    .navLiAHoverTemaClaro a:hover {
+        color: rgb(205, 143, 255);
+        text-shadow:
+            0px 0.5px 1px white,
+            0px 0px 5px black;
+    }
+
+    .sobreMimTemaClaro {
+        border-bottom: 0.104vw solid #ffffff75;
+    }
+
+    .sobreMimTemaClaro h1 {
+        background-color: #ffffff75;
+    }
+    .sobreMimTemaClaro p{
+        text-shadow: 0px 0px 2px black;
+    }
+
+    .buttonSobreMimTemaClaro {
+        color: #a372ff;
+        text-shadow: 1px 1px 2px white;
+        background-color: transparent;
+        border: 0.104vw solid #5a7cff;
+        transition: all 0.2s ease-in-out;
+        margin: 5vh 0.5vw 3vh 0.5vw;
+        animation: pulsar 2s ease-in-out infinite;
+    }
+
+    .cardTemaClaro {
+        border: 0.104vw solid white;
+        box-shadow: 0vw 0vw 0.26vw 0.052vw rgb(106, 26, 255);
+    }
+
+    .cardTemaClaro:hover {
+        transform: scale(1.05);
+        box-shadow: 0vw 0vw 0.26vw 0.052vw #5a7cff;
+    }
+
+    .cardH1TemaClaro {
+        color: rgb(179, 157, 250);
+    }
+
+    .cardTemaClaro p {
+        color: black;
+    }
+
+    .cardTemaClaro li {
+        color: black;
+        text-shadow: 0px 0px 2px white;
+    }
+
+    .idiomasTemaClaro {
+        color: rgb(70, 70, 218);
+        text-shadow: 1px 1px 2px white;
+    }
+
+    .idiomasTemaClaro div p {
+        background-color: rgb(255, 255, 255);
+        padding: 0vw 0.5vw 0vw 0.5vw;
+        color: rgb(179, 157, 250);
+        text-shadow: 0px 0px 0px black;
+    }
+
+    .textPortTemaClaro {
+        text-shadow: 0vw 0vw 5.208vw #0400ff;
+    }
+
+    .cssbuttons-ioTemaClaro {
+        background: linear-gradient(45deg, rgba(112, 110, 252, 1) 0%, rgba(167, 107, 250, 1) 100%);
+    }
+
+    .textFormacaoTemaClaro {
+        color: rgb(70, 70, 218);
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 10vw;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.516);
+        position: fixed;
+        z-index: 999;
+    }
+    
+    .navLi {
+        list-style-type: none;
+        font-size: 3vw;
+        transition: all 0.4s ease;
+    }
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 6.042vw;
+        height: 3.334vw;
+    }
+
+    .slider::before {
+        content: "";
+        position: absolute;
+        width: 2.708vw;
+        height: 2.708vw;
+        left: 0.312vw;
+        top: 0.312vw;
+        background: #fff;
+        border-radius: 50%;
+        transition: .35s cubic-bezier(.4, 0, .2, 1);
+        box-shadow:
+            0 0.208vw 0.626vw rgba(0, 0, 0, .25),
+            0 0.104vw 0.208vw rgba(0, 0, 0, .15);
+    }
+
+    .switch input:checked+.slider::before {
+        transform: translateX(2.708vw);
+    }
+
+    .switch input:active+.slider::before {
+        width: 3.126vw;
+    }
+
+    .switch input:checked:active+.slider::before {
+        transform: translateX(2.292vw);
+    }
+
+    .div1sobremim {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .imgFace {
+        height: 80vw;
+        width: 70vw;
+        border-radius: 2vw;
+        box-shadow: -0.521vw -0.521vw 5.208vw 0.001vw rgb(140, 0, 255), 0.521vw 0.521vw 2.604vw 0.001vw #00bfff7b;
+        object-fit: cover;
+        margin-bottom: 5vw;
+        margin-top: 12vw;
+    }
+
+    .sobreMim {
+        width: 90%;
+        font-size: 1.2vw;
+        text-align: justify;
+        color: white;
+        border-bottom: 0.104vw solid #37cdff75;
+    }
+
+    .sobreMim h1 {
+        background-color: #37cdff75;
+        padding: 0.2vw 0.2vw 0.2vw 0.5vw;
+        margin-bottom: 0.5vw;
+        color: white;
+        width: 100%;
+        font-size: 5vw;
+    }
+
+    .name {
+        font-size: 4vw;
+    }
+
+    .sobreMim p {
+        padding: 0.5vw;
+        font-size: 3vw;
+        width: 100%;
+    }
+
+    .buttonSobreMim {
+        color: white;
+        height: 10vw;
+        width: 25vw;
+        background-color: transparent;
+        border: 0.104vw solid #37cdff;
+        font-size: 4vw;
+        transition: all 0.2s ease-in-out;
+        margin: 5vh 0.5vw 3vh 0.5vw;
+        animation: pulsar 2s ease-in-out infinite;
+    }
+
+    .from-top {
+        transform: translateY(-100px);
+    }
+
+    .from-bottom {
+        transform: translateY(100px);
+    }
+
+    .from-left {
+        transform: translateX(-100px);
+    }
+
+    .from-right {
+        transform: translateX(10px);
+    }
+
+    .div2formacao {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .formacao {
+        font-size: 6vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .textFormacao {
+        letter-spacing: 1vw;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        gap: 2vh;
+        flex-direction: column;
+    }
+
+    .card {
+        height: 40vw;
+        width: 85vw;
+        border-top: 0.104vw solid lightgray;
+        border-bottom: 0.104vw solid #37cdff;
+        border-right: 0.104vw solid lightgray;
+        border-left: 0.104vw solid #37cdff;
+        border-radius: 2vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card p {
+        text-align: justify;
+        color: white;
+        width: 60vw;
+        font-size: 3vw;
+    }
+
+    .card li {
+        color: white;
+        width: 80vw;
+        font-size: 3vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        border-top: 0.104vw solid #37cdff;
+        border-bottom: 0.104vw solid #37cdff;
+        border-right: 0.104vw solid #37cdff;
+        border-left: 0.104vw solid #37cdff;
+        box-shadow: 0vw 0vw 0.26vw 0.052vw white;
+    }
+
+    .cardH1 {
+        font-size: 5vw;
+        color: #37cdff;
+        display: flex;
+        justify-content: center;
+        margin: 1vw;
+    }
+
+    .idiomas {
+        color: white;
+        display: flex;
+        height: 5vh;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+        width: 90%;
+    }
+
+    .idiomas p {
+        font-size: 3vw;
+    }
+
+    .idiomas h1 {
+        font-size: 9vw;
+        margin: 10vw;
+    }
+
+    .idiomas div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 0.052vw solid black;
+        width: 10vw;
+        height: 1.5vw;
+    }
+
+    .idiomas div p {
+        background-color: rgba(255, 255, 255, 0.521);
+        padding: 0vw 0.5vw 0vw 0.5vw;
+        border: 2px solid black;
+        color: rgb(255, 255, 255);
+        text-shadow: 0px 0px 1px black;
+        width: max-content;
+        height: max-content;
+    }
+
+    .div3portfolio {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gridport {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1vw;
+    }
+
+    .inteiro {
+        grid-column: 1 / -1;
+    }
+
+    .gridportcard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+        height: 40vw;
+        border: 0.078vw solid rgb(0, 0, 0);
+        background-color: #0000005a;
+        font-size: 2.5vw;
+        color: white;
+        transition: all 0.2s ease-in-out;
+        overflow: hidden;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+    }
+
+    .textPort {
+        font-size: 25vw;
+        letter-spacing: -0.35vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-shadow: 0vw 0vw 5.208vw rgb(162, 0, 255);
+        margin: 1vw 2vw 1vw 2vw;
+        z-index: 998;
+    }
+
+    .gridPortfolio1 {
+        background-image: url(/images/JogoMemoria.png);
+        background-size: 30vw 40vw;
+    }
+
+    .gridPortfolio2 {
+        background-image: url(/images/JogoDetonaRalph.png);
+        background-size: 30vw 40vw;
+    }
+
+    .gridPortfolio3 {
+        background-image: url(/images/Calculadora.png);
+        background-size: 30vw 40vw;
+    }
+
+    .gridPortfolio4 {
+        background-image: url(/images/Portifolio.png);
+        background-size: 30vw 40vw;
+    }
+
+    .gridPortCardText {
+        background-color: #0f0f0ff1;
+        width: 30vw;
+        height: 20vw;
+        margin-top: 20vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: justify;
+    }
+
+    .gridport h1 {
+        font-size: 3.5vw;
+    }
+
+    .gridport p {
+        font-size: 2.3vw;
+        text-align: center;
+    }
+
+    footer {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+    }
+
+    .metodContact {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contactOtters {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5vw;
+        flex-direction: column;
+    }
+
+    .contactOtters p {
+        width: 90vw;
+        text-align: justify;
+        font-size: 4vw;
+        margin-bottom: 4vw;
+    }
+
+    .contactEmail {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    footer input {
+        background-color: transparent;
+        border: 0.052vw solid rgb(255, 255, 255);
+        width: 85vw;
+        height: 8vw;
+        margin: 0.5vw;
+        padding: 1vw;
+        color: white;
+        font-size: 4vw;
+        border-radius: 2.5vw;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .mensage {
+        background-color: transparent;
+        border: 0.052vw solid rgb(255, 255, 255);
+        width: 85vw;
+        height: 24vw;
+        margin: 0.5vw;
+        padding: 1vw;
+        color: white;
+        font-size: 4vw;
+        border-radius: 2.5vw;
+        transition: all 0.2s ease-in-out;
+    }
+
+    footer h1 {
+        font-size: 15.5vw;
+        margin: 5vw;
+    }
+
+    #wpp,
+    #inst,
+    #link,
+    #disc,
+    #gith {
+        width: 10vw;
+        margin: 6vw 1vw 10vw 1vw;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .cssbuttons-io {
+        position: relative;
+        font-family: inherit;
+        font-weight: 500;
+        letter-spacing: 0.2vw;
+        cursor: pointer;
+        border: none;
+        background: linear-gradient(to right, #6a00ff, #1100ff);
+        color: ghostwhite;
+        overflow: hidden;
+        width: 24vw;
+        height: 8vw;
+        margin: 0.5vw;
+        padding: 0.5vw;
+        font-size: 5vw;
+        border-radius: 1.25vw;
+        transition: all 0.2s ease-in-out;
+    }
+
+    /*==========================================================
+        TEMA CLARO (ESTÁ POR ULTIMO POR SER CASCATA!)
+    ==========================================================*/
+
+    .bodyTemaClaroAtivo {
+        transition: background 0.4s ease-in-out;
+        background-image: url(/images/mesh-80.png);
+    }
+
+    .navLiAHoverTemaClaro a:hover {
+        color: rgb(205, 143, 255);
+        text-shadow:
+            0px 0.5px 1px white,
+            0px 0px 5px black;
+    }
+
+    .sobreMimTemaClaro {
+        border-bottom: 0.104vw solid #ffffff75;
+    }
+
+    .sobreMimTemaClaro h1 {
+        background-color: #ffffff75;
+    }
+    .sobreMimTemaClaro p{
+        text-shadow: 0px 0px 2px black;
+    }
+
+    .buttonSobreMimTemaClaro {
+        color: #a372ff;
+        text-shadow: 1px 1px 2px white;
+        background-color: transparent;
+        border: 0.104vw solid #5a7cff;
+        transition: all 0.2s ease-in-out;
+        margin: 5vh 0.5vw 3vh 0.5vw;
+        animation: pulsar 2s ease-in-out infinite;
+    }
+
+    .cardTemaClaro {
+        border: 0.104vw solid white;
+        box-shadow: 0vw 0vw 0.26vw 0.052vw rgb(106, 26, 255);
+    }
+
+    .cardTemaClaro:hover {
+        transform: scale(1.05);
+        box-shadow: 0vw 0vw 0.26vw 0.052vw #5a7cff;
+    }
+
+    .cardH1TemaClaro {
+        color: rgb(179, 157, 250);
+    }
+
+    .cardTemaClaro p {
+        color: black;
+    }
+
+    .cardTemaClaro li {
+        color: black;
+        text-shadow: 0px 0px 2px white;
+    }
+
+    .idiomasTemaClaro {
+        color: rgb(70, 70, 218);
+        text-shadow: 1px 1px 2px white;
+    }
+
+    .idiomasTemaClaro div p {
+        background-color: rgb(255, 255, 255);
+        padding: 0vw 0.5vw 0vw 0.5vw;
+        color: rgb(179, 157, 250);
+        text-shadow: 0px 0px 0px black;
+    }
+
+    .textPortTemaClaro {
+        text-shadow: 0vw 0vw 5.208vw #0400ff;
+    }
+
+    .cssbuttons-ioTemaClaro {
+        background: linear-gradient(45deg, rgba(112, 110, 252, 1) 0%, rgba(167, 107, 250, 1) 100%);
+    }
+
+    .textFormacaoTemaClaro {
+        color: rgb(70, 70, 218);
+    }
+}

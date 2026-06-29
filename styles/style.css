@@ -1,0 +1,833 @@
+/*==========================================================
+    IMPORTAÇÕES DE FONTES
+==========================================================*/
+
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+/*==========================================================
+    CONFIGURAÇÕES GERAIS
+==========================================================*/
+
+* {
+    font-family: "Alumni Sans SC", sans-serif;
+}
+
+::selection {
+    color: #37cdff;
+    font-weight: bolder;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+em {
+    color: #37cdff;
+    text-shadow: 0.078vw 0vw 0.052vw rgb(255, 255, 255);
+}
+
+.name {
+    font-size: 1.5vw;
+}
+
+body {
+    scrollbar-width: none;
+    background-image: url(/images/mesh-385.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 400vh;
+    transition: all 0.4s ease-in-out;
+    overflow-x: hidden;
+}
+
+/*==========================================================
+    PERSONALIZAÇÃO DA BARRA DE ROLAGEM
+==========================================================*/
+
+::-webkit-scrollbar {
+    width: 0.521vw;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f0f0f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#37cdff, #5a7cff);
+    border-radius: 0.521vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(#5a7cff, #37cdff);
+}
+
+/*==========================================================
+    EFEITO DE GLOW EM VOLTA DO MOUSE NOS CARD->PORTFOLIO
+==========================================================*/
+
+.mouse-glow {
+    position: fixed;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.055);
+    ;
+    filter: blur(1vw);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+/*==========================================================
+    ANIMAÇÕES UTILIZADAS NO SITE
+==========================================================*/
+
+/* Exemplo de utilização: 
+    animation: breathe 1s infinite;
+*/
+@keyframes breathe {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.02);
+    }
+}
+
+/* Exemplo de utilização: 
+    animation: float 1s infinite;
+*/
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Exemplo de utilização: 
+    animation: pulsar 1s infinite;
+*/
+@keyframes pulsar {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.03);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*==========================================================
+    HEADER E OUTROS
+==========================================================*/
+
+header {
+    height: 5vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.516);
+    position: fixed;
+    z-index: 999;
+}
+
+.navItens {
+    display: flex;
+    gap: 2vw;
+    transition: all 0.4s ease;
+}
+
+.navLi {
+    list-style-type: none;
+    font-size: 1.5vw;
+    transition: all 0.4s ease;
+}
+
+.navLi:hover {
+    transform: scale(1.05);
+}
+
+.navLi a {
+    text-decoration: none;
+    color: white;
+    padding: 0.3vw;
+    font-family: "Bungee", sans-serif;
+}
+
+.navLi a:hover {
+    color: #37cdff;
+}
+
+.reveal {
+    opacity: 0;
+    transition: all 0.8s ease;
+    will-change: transform, opacity;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/*==========================================================
+    ANIMAÇÃO DE ENTRADA DOS ELEMENTOS VIA SCROLL
+==========================================================*/
+
+.from-top {
+    transform: translateY(-100px);
+}
+
+.from-bottom {
+    transform: translateY(100px);
+}
+
+.from-left {
+    transform: translateX(-100px);
+}
+
+.from-right {
+    transform: translateX(100px);
+}
+
+/*==========================================================
+    SOBRE MIM
+==========================================================*/
+
+.div1sobremim {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgFace div {
+    height: 100%;
+}
+
+.imgFace {
+    height: 30vw;
+    width: 25vw;
+    border-radius: 2vw;
+    box-shadow: -0.521vw -0.521vw 5.208vw 0.001vw rgb(140, 0, 255), 0.521vw 0.521vw 2.604vw 0.001vw #00bfff7b;
+    object-fit: cover;
+    margin-right: 3vw;
+}
+
+.sobreMim {
+    width: 53%;
+    font-size: 1.2vw;
+    text-align: justify;
+    color: white;
+    border-bottom: 0.104vw solid #37cdff75;
+}
+
+.sobreMim h1 {
+    background-color: #37cdff75;
+    padding: 0.2vw 0.2vw 0.2vw 0.5vw;
+    margin-bottom: 0.5vw;
+    color: white;
+}
+
+.sobreMim p {
+    text-decoration: dashed;
+    padding: 0.5vw;
+}
+
+.buttonSobreMim {
+    color: white;
+    height: 3vw;
+    width: 10vw;
+    background-color: transparent;
+    border: 0.104vw solid #37cdff;
+    font-size: 1.5vw;
+    transition: all 0.2s ease-in-out;
+    margin: 5vh 0.5vw 3vh 0.5vw;
+    animation: pulsar 2s ease-in-out infinite;
+}
+
+.buttonSobreMim:hover {
+    animation: pulsar 0s ease-in-out infinite;
+    cursor: pointer;
+}
+
+.buttonSobreMim:active {
+    transform: scale(0.98);
+}
+
+/*==========================================================
+    FORMAÇÃO
+==========================================================*/
+
+.div2formacao {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formacao {
+    font-size: 2vw;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textFormacao {
+    letter-spacing: 1vw;
+    text-align:center; margin: 3vh;
+    color: white;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.card {
+    height: 20vw;
+    width: 25vw;
+    border-top: 0.104vw solid lightgray;
+    border-bottom: 0.104vw solid #37cdff;
+    border-right: 0.104vw solid lightgray;
+    border-left: 0.104vw solid #37cdff;
+    border-radius: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card p {
+    text-align: justify;
+    color: white;
+    width: 22vw;
+    font-size: 1.2vw;
+}
+
+.card li {
+    color: white;
+    width: 22vw;
+    font-size: 1.2vw;
+    display: flex;
+    justify-content: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    border-top: 0.104vw solid #37cdff;
+    border-bottom: 0.104vw solid #37cdff;
+    border-right: 0.104vw solid #37cdff;
+    border-left: 0.104vw solid #37cdff;
+    box-shadow: 0vw 0vw 0.26vw 0.052vw white;
+}
+
+.cardH1 {
+    font-size: 1.5vw;
+    color: #37cdff;
+    display: flex;
+    justify-content: center;
+    margin: 1rem
+}
+
+.idiomas {
+    color: white;
+    display: flex;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw;
+    gap: 2vw;
+}
+
+.idiomas p {
+    font-size: 1.2vw;
+}
+
+.idiomas div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 10vw;
+    height: 1.5vw;
+}
+
+.idiomas div p {
+    background-color: rgba(255, 255, 255, 0.521);
+    padding: 0vw 0.5vw 0vw 0.5vw;
+    border: 2px solid black;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 1px black;
+}
+
+/* PORTFOLIO */
+.div3portfolio {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridport {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw;
+}
+
+.inteiro {
+    grid-column: 1 / -1;
+}
+
+.gridportcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 30vh;
+    border: 0.078vw solid rgb(0, 0, 0);
+    background-color: #0000005a;
+    font-size: 2.5vw;
+    color: white;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.gridportcard:hover {
+    box-shadow: 0vw 0vw 10vw 0.5vw rgba(153, 153, 153, 0.033);
+    filter: grayscale(50%);
+    -webkit-filter: grayscale(50%);
+    animation: breathe 2s ease-in-out infinite;
+}
+
+.textPort {
+    font-size: 5vw;
+    letter-spacing: -0.35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0vw 0vw 5.208vw rgb(162, 0, 255);
+    margin: -3vw;
+    z-index: 998;
+}
+
+.gridport a {
+    text-decoration: none;
+}
+
+.gridPortfolio1 {
+    background-image: url(/images/JogoMemoria.png);
+    background-size: 20vw 30vh;
+}
+
+.gridPortfolio2 {
+    background-image: url(/images/JogoDetonaRalph.png);
+    background-size: 20vw 30vh;
+}
+
+.gridPortfolio3 {
+    background-image: url(/images/Calculadora.png);
+    background-size: 20vw 30vh;
+}
+
+.gridPortfolio4 {
+    background-image: url(/images/Portifolio.png);
+    background-size: 20vw 30vh;
+}
+
+.gridPortfolio5 {
+    background-image: url(/images/DESENVOLVIMENTO.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+.gridPortfolio6 {
+    background-image: url(/images/DESENVOLVIMENTO.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+.gridPortCardText {
+    background-color: #0f0f0ff1;
+    width: 20vw;
+    height: 15vh;
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gridport h1 {
+    font-size: 1.5vw;
+}
+
+.gridport p {
+    font-size: 1vw;
+    text-align: center;
+}
+
+/*==========================================================
+    FOOTER
+==========================================================*/
+
+footer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.metodContact {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contactOtters {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    flex-direction: column;
+}
+
+.contactOtters p {
+    width: 70%;
+    text-align: justify;
+}
+
+.contactEmail {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer input {
+    background-color: transparent;
+    border: 0.052vw solid rgb(255, 255, 255);
+    width: 35vw;
+    margin: 0.5vw;
+    padding: 1vw;
+    color: white;
+    font-size: 1.0vw;
+    border-radius: 0.5vw;
+    transition: all 0.2s ease-in-out;
+}
+
+.mensage {
+    background-color: transparent;
+    border: 0.052vw solid rgb(255, 255, 255);
+    width: 35vw;
+    height: 8vw;
+    margin: 0.5vw;
+    padding: 1vw;
+    color: white;
+    font-size: 1.0vw;
+    border-radius: 0.5vw;
+    transition: all 0.2s ease-in-out;
+}
+
+footer input:focus {
+    outline: none;
+    border: 0.104vw solid #37cdff;
+    padding: 1vw;
+    box-shadow: 0vw 0vw 0.521vw 0.104vw #37cdff75;
+}
+
+.mensage:focus {
+    outline: none;
+    border: 0.104vw solid #37cdff;
+    padding: 1vw;
+    box-shadow: 0vw 0vw 0.521vw 0.104vw #37cdff75;
+}
+
+footer input::placeholder {
+    color: #ffffff;
+}
+
+.mensage::placeholder {
+    color: #ffffff;
+}
+
+footer h1 {
+    font-size: 4.5vw;
+    margin: 5vw;
+}
+
+.icones {
+    filter: invert(1);
+}
+
+#wpp,
+#inst,
+#link,
+#disc,
+#gith {
+    width: 2vw;
+    margin: 1vw;
+    margin-top: 3vw;
+    transition: all 0.2s ease-in-out;
+}
+
+#wpp:hover,
+#inst:hover,
+#link:hover,
+#disc:hover,
+#gith:hover {
+    transform: scale(1.10);
+}
+
+.cssbuttons-io {
+    position: relative;
+    font-family: inherit;
+    font-weight: 500;
+    letter-spacing: 0.2vw;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to right, #6a00ff, #1100ff);
+    color: ghostwhite;
+    overflow: hidden;
+    width: 8vw;
+    height: 2.5vw;
+    margin: 0.5vw;
+    padding: 0.5vw;
+    font-size: 1vw;
+    border-radius: 0.25vw;
+    transition: all 0.2s ease-in-out;
+}
+
+.cssbuttons-io::before,
+.cssbuttons-io::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.cssbuttons-io::before {
+    content: "";
+    background: #00000085;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.cssbuttons-io:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+
+.cssbuttons-io:active {
+    transform: scale(0.95);
+}
+
+/*==========================================================
+    POP-UP DE ERRO / SUCESSO
+==========================================================*/
+
+#toast-container {
+    position: fixed;
+    top: 1.042vw;
+    right: 1.042vw;
+    z-index: 999;
+}
+
+.toast {
+    width: 24vw;
+    background: rgba(68, 0, 163, 0.541);
+    color: white;
+    border-left: 0.521vw solid #ff3b30;
+    border-radius: 0px;
+    padding: 0vw 0vw 0vw 0.625vw;
+    box-shadow: 0 0.521vw 1.563vw rgba(0, 0, 0, .25);
+    transform: translateX(20.833vw);
+    opacity: 0;
+    transition: .4s ease;
+    margin: 0.5vw;
+}
+
+.toast.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.toast.hide {
+    transform: translateX(20.833vw);
+    opacity: 0;
+}
+
+.toast h4 {
+    font-size: 2vw;
+    color: white;
+}
+
+.toast p {
+    font-size: 1.5vw;
+    color: white;
+}
+
+/*==========================================================
+    BOTÃO DE TROCAR TEMA
+==========================================================*/
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 3.021vw;
+    height: 1.667vw;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    background: #0A84FF;
+    border-radius: 2.604vw;
+    transition: .35s ease;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 1.354vw;
+    height: 1.354vw;
+    left: 0.156vw;
+    top: 0.156vw;
+    background: #fff;
+    border-radius: 50%;
+    transition: .35s cubic-bezier(.4, 0, .2, 1);
+    box-shadow:
+        0 0.104vw 0.313vw rgba(0, 0, 0, .25),
+        0 0.052vw 0.104vw rgba(0, 0, 0, .15);
+}
+
+.switch input:checked+.slider {
+    background: #6a00ff;
+}
+
+.switch input:checked+.slider::before {
+    transform: translateX(1.354vw);
+}
+
+.switch input:active+.slider::before {
+    width: 1.563vw;
+}
+
+.switch input:checked:active+.slider::before {
+    transform: translateX(1.146vw);
+}
+
+.switch input:focus-visible+.slider {
+    box-shadow: 0 0 0 0.208vw rgba(10, 132, 255, .25);
+}
+
+/*==========================================================
+    TEMA CLARO (ESTÁ POR ULTIMO POR SER CASCATA!)
+==========================================================*/
+
+.bodyTemaClaroAtivo {
+    transition: background 0.4s ease-in-out;
+    background-image: url(/images/mesh-80.png);
+}
+
+.navLiAHoverTemaClaro a:hover {
+    color: rgb(205, 143, 255);
+    text-shadow:
+        0px 0.5px 1px white,
+        0px 0px 5px black;
+}
+
+.sobreMimTemaClaro {
+    border-bottom: 0.104vw solid #ffffff75;
+}
+
+.sobreMimTemaClaro h1 {
+    background-color: #ffffff75;
+}
+
+.buttonSobreMimTemaClaro {
+    color: #ffffff;
+    background-color: transparent;
+    border: 0.104vw solid #5a7cff;
+    transition: all 0.2s ease-in-out;
+    margin: 5vh 0.5vw 3vh 0.5vw;
+    animation: pulsar 2s ease-in-out infinite;
+}
+
+.cardTemaClaro {
+    border: 0.104vw solid white;
+    box-shadow: 0vw 0vw 0.26vw 0.052vw rgb(106, 26, 255);
+}
+
+.cardTemaClaro:hover {
+    transform: scale(1.05);
+    box-shadow: 0vw 0vw 0.26vw 0.052vw #5a7cff;
+}
+
+.cardH1TemaClaro {
+    color: rgb(179, 157, 250);
+}
+
+.cardTemaClaro p {
+    color: black;
+}
+
+.cardTemaClaro li {
+    color: black;
+}
+
+.idiomasTemaClaro {
+    color: rgb(179, 157, 250);
+}
+
+.idiomasTemaClaro div p {
+    background-color: rgb(255, 255, 255);
+    padding: 0vw 0.5vw 0vw 0.5vw;
+    color: rgb(179, 157, 250);
+    text-shadow: 0px 0px 0px black;
+}
+
+.textPortTemaClaro {
+    text-shadow: 0vw 0vw 5.208vw #0400ff;
+}
+
+.cssbuttons-ioTemaClaro {
+    background: linear-gradient(45deg, rgba(112, 110, 252, 1) 0%, rgba(167, 107, 250, 1) 100%);
+}
+.textFormacaoTemaClaro{
+    color: rgb(70, 70, 218);
+}
