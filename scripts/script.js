@@ -48,7 +48,7 @@ reveals.forEach(item => observer.observe(item));
 //=========================================================================
 
 function curriculoDownload() {
-    window.open("./docs/Currículo Thiago Castor p- tech.pdf", "_blank");
+    window.open("./docs/Curriculo-Thiago-Castor-tech.pdf", "_blank");
 }
 
 //=========================================================================
