@@ -288,22 +288,22 @@
 
 
     .gridPortfolio1 {
-        background-image: url(/images/JogoMemoria.png);
+        background-image: url(./images/JogoMemoria.png);
         background-size: 30vw 40vw;
     }
 
     .gridPortfolio2 {
-        background-image: url(/images/JogoDetonaRalph.png);
+        background-image: url(./images/JogoDetonaRalph.png);
         background-size: 30vw 40vw;
     }
 
     .gridPortfolio3 {
-        background-image: url(/images/Calculadora.png);
+        background-image: url(./images/Calculadora.png);
         background-size: 30vw 40vw;
     }
 
     .gridPortfolio4 {
-        background-image: url(/images/Portifolio.png);
+        background-image: url(./images/Portifolio.png);
         background-size: 30vw 40vw;
     }
 
@@ -450,7 +450,7 @@
 
     .bodyTemaClaroAtivo {
         transition: background 0.4s ease-in-out;
-        background-image: url(/images/mesh-80.png);
+        background-image: url(./images/mesh-80.png);
     }
 
     .navLiAHoverTemaClaro a:hover {
@@ -810,22 +810,22 @@
     }
 
     .gridPortfolio1 {
-        background-image: url(/images/JogoMemoria.png);
+        background-image: url(./images/JogoMemoria.png);
         background-size: 30vw 40vw;
     }
 
     .gridPortfolio2 {
-        background-image: url(/images/JogoDetonaRalph.png);
+        background-image: url(./images/JogoDetonaRalph.png);
         background-size: 30vw 40vw;
     }
 
     .gridPortfolio3 {
-        background-image: url(/images/Calculadora.png);
+        background-image: url(./images/Calculadora.png);
         background-size: 30vw 40vw;
     }
 
     .gridPortfolio4 {
-        background-image: url(/images/Portifolio.png);
+        background-image: url(./images/Portifolio.png);
         background-size: 30vw 40vw;
     }
 
@@ -956,7 +956,7 @@
 
     .bodyTemaClaroAtivo {
         transition: background 0.4s ease-in-out;
-        background-image: url(/images/mesh-80.png);
+        background-image: url(./images/mesh-80.png);
     }
 
     .navLiAHoverTemaClaro a:hover {
